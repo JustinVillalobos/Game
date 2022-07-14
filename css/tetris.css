@@ -1,0 +1,212 @@
+body      { font-family: Helvetica, sans-serif; }
+body{
+    background: url(../assets/FONDO-AZUL.jpg);
+    background-size: cover;
+}
+    #tetris   { background-color: transparent;margin: 1em auto; padding: 1em; border: 4px solid black; border-radius: 10px;  margin-bottom: 0px;}
+    #stats    { display: inline-block; vertical-align: top; }
+    #canvas   { display: inline-block; vertical-align: top; background: url(../assets/tetris.jpg);    background: url(../assets/tetris.jpg);
+        background-size: cover; border: 2px solid #333; }
+    #menu     { display: inline-block; vertical-align: top; position: relative; }
+    #menu p   { margin: 0.5em 0; text-align: center; }
+    #menu p a { text-decoration: none; color: black; }
+    #upcoming { display: block; margin: 0 auto; border:1px solid;}
+    #score    { color: red; font-weight: bold; vertical-align: middle; }
+    #rows     { color: blue; font-weight: bold; vertical-align: middle; }
+    #stats    { position: absolute; bottom: 0em; right: 1em;width:75px; }
+    .pad{
+        width:100%;
+        height: 55px;
+    }
+    .tetris .col-sm-6{
+        width:50%!important;
+        padding: 0;
+        
+        
+    }
+    .tetris .col-sm-7{
+        width:75%!important;
+        padding: 0;
+ 
+    }
+    .tetris .col-sm-3{
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .tetris .col-sm-2{
+        width:5%!important;
+        padding: 0;
+    }
+    .tetris{
+        overflow: hidden;
+    }
+    #tetris{
+        margin: 0;
+        width: 100%;
+        max-height: 75vh;
+        margin-left: 15px;
+
+    }
+    #canvas{
+        height: 70vh;
+       
+    }
+    body {
+       overflow: hidden;
+        
+    }
+    .pad{
+        background: transparent;
+    }
+    .padv img{
+        width: 25px;
+    }
+    .padh img{
+        width: 60px;
+    }
+    .pad{
+        display:none;
+    }
+    #start,#options{
+        width: 63%;
+        cursor: pointer;
+        position: absolute;
+    }
+    .label,.label2{
+        z-index: 2;
+        margin: 0;
+        cursor: pointer;
+    }
+    .label:hover + #start,.label:hover + #options {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+   }
+   .label2:hover + #start,.label2:hover + #options {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+    #start:hover,#options:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+    .container-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        margin-top: 50px;
+    }
+    #container-btn{
+        margin-top: 10%;
+    }
+    #container-upcoming{
+        margin-left:0px;
+    }
+ 
+    @media screen and (max-width: 1000px){
+        
+        .pad{
+            display:block;
+        }
+        .tetris .col-sm-3{
+            justify-content: initial;
+        }
+        .container-btn2{
+            margin-top: 15%!important;
+        }
+        .header img{
+            width: 100px!important;
+        }
+        h1{
+            font-size: small;
+        }
+        .header .col-md-8{
+            width:60%;
+        }
+        .header .col-md-2{
+            width: 0% !important;;
+        }
+        .container-tetris{
+            left: -5500px;
+        }
+        .container-btns{
+            width: 100%!important;
+            height: max-content;
+            position: absolute;
+            font-size: 22px;
+            margin-left: 15px;
+            max-width: 100%!important;
+        }
+        .container-btns .container-btn2{
+            margin-top: 10%!important;
+        }
+        #start, #options{
+            width: 50%!important;
+        }
+        #container-upcoming{
+            margin-left: 3% !important;;
+        }
+        #container-btn{
+            margin-top: 5%;
+        }
+        
+    }
+    
+    @media screen and (max-width: 281px) and (max-height:654px){
+        .container-btns{
+            font-size: 15px;
+        }
+        .container-btn{
+            font-size: 15px;
+        }
+    }
+    @media screen and (min-width: 767px) and (min-height:1020px){
+        .container-btns .container-btn2{
+            margin-top: 15%!important;
+        }
+        #container-btn{
+            margin-top: 10%;
+        }
+    }
+    .header img{
+        width:200px;
+        cursor: pointer;
+    }
+    .title{
+        
+        align-items: center;
+        text-align: center;
+        
+    }
+    h1{
+       
+        color:white;
+    }
+   
+    @media screen and (min-width: 1000px){
+        #tetris{
+            width:45%;
+        }
+        .tetris .col-sm-7{
+            display: flex;
+            justify-content: center;
+        }
+       
+    }
+  
